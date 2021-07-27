@@ -37,12 +37,29 @@
         border: none;
         background: white;
         position: absolute;
-        right: 90px;
+        right: 95px;
         top: 20px;
         opacity: 0.6;
     }
 
-    
+    .ninebutton:hover {
+        opacity: 0.8;
+    }
+
+    .sign-in {
+        position:absolute;
+        right: 10px;
+        top: 14px;
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        font-family: arial, sans-serif;
+        color:white;
+        font-size: 13px;
+        outline: none;
+        background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+        padding: 7px 12px;
+        border-radius: 2px; 
+    }   
 </style>
 
 <html lang="en">
@@ -52,29 +69,33 @@
     </head>
     <body>
         <div class="left">
-             <a href=#>
-                    About
-            </a>
-             <a href=#>
-                 Store
-             </a>
-        </div>
-         <div class="right">
-             <a href=#>
-                 Gmail
+            <a href=#>
+                About
             </a>
             <a href=#>
-                 Images
-                 </a>
-          </div>
-            <button href=# class="ninebutton">
+                Store
+            </a>
+        </div>
+        <div class="right">
+            <a href=#>
+                Gmail
+            </a>
+            <a href=#>
+                Images
+            </a>
+        </div>
+            <a href=#>
                 <img src="https://image.flaticon.com/icons/png/512/80/80975.png" alt="nine button"
-                width=16px;>
+                width=16px; class="ninebutton">
+            </a>
+        </div>
+        <div>
+            <button class="sign-in">
+                Sign in
             </button>
-            </div>
-
-         <div class="center">
-             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
-         </div>
-     </body> 
+        </div>
+        <div class="center">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+        </div>
+    </body> 
 </html>
