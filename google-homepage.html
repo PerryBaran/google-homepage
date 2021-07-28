@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <style>
+    * {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+    }
+
     .center {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 500px;
+        height: 450px;
     }
     
     .left {
@@ -20,8 +25,6 @@
     }
 
     a {
-        font-family: arial, sans-serif;
-        font-size: 13px;
         color: #000;
         text-decoration: none;
         display: inline-block;
@@ -47,19 +50,60 @@
     }
 
     .sign-in {
-        position:absolute;
+        position: absolute;
         right: 10px;
         top: 14px;
         border: 1px solid #4285f4;
         font-weight: bold;
-        font-family: arial, sans-serif;
         color:white;
-        font-size: 13px;
         outline: none;
         background: -webkit-linear-gradient(top,#4387fd,#4683ea);
         padding: 7px 12px;
         border-radius: 2px; 
-    }   
+    }
+
+    .wrapper {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 320px;
+    }
+
+    .search-icon {
+        position: relative;
+        top: 4px;
+        width: 17px;
+        left: 30px;
+        opacity: 0.4;
+    }
+
+    .search {
+        border: 1px solid rgb(182, 181, 181);
+        border-radius: 100px;
+        height: 45px;
+        width: 475px;
+        padding: 2px 40px 1px 40px;
+        outline: 0;
+    }
+
+    .search:hover {
+        box-shadow: 0px 0 9px rgba(150, 148, 148, 0.329);
+    }
+
+    .mic {
+        position: relative;
+        top: 5px;
+        right: 35px;
+        width: 14px;
+    }
+
+    input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+    input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration { display: none; }
+    
 </style>
 
 <html lang="en">
@@ -96,6 +140,12 @@
         </div>
         <div class="center">
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+            </div>
+        <div class="wrapper">
+                <img class="search-icon" src="https://cdn.icon-icons.com/icons2/2518/PNG/512/search_icon_151112.png">
+                <input class="search" type="Search">
+                <img class="mic" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Google_mic.svg">
+            </div>
         </div>
     </body> 
 </html>
