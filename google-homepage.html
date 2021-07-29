@@ -35,6 +35,19 @@
     .link:hover {
         text-decoration: underline;
     }
+
+    .link-bottom {
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        padding-left: 19px;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+    
+    .link-bottom:hover {
+        text-decoration: underline;
+    }
     
     .ninebutton {
         border: none;
@@ -157,6 +170,33 @@
         cursor: pointer;
     }
 
+    .bottom-bar {
+        position: absolute;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        bottom: 0px;
+        width: 101%;
+        margin-left: -10px;
+        padding-top: 20px;
+    }
+
+    .bottom-left {
+        position: relative;
+        top: -10px;
+        left: 20px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
 </style>
 
 <html lang="en">
@@ -210,6 +250,30 @@
             <button class="lucky">
                 I'm Feeling Lucky
             </button>
+        </div>
+        <div class="bottom-bar">
+            <div class = "bottom-left">
+                <a href=# class="link-bottom">
+                    Advertising
+                </a>
+                <a href=# class="link-bottom">
+                    Business
+                </a>
+                <a href=# class="link-bottom">
+                    How Search works
+                </a>
+            </div>
+            <div class="bottom-right">
+                <a href=# class="link-bottom">
+                    Privacy
+                </a>
+                <a href=# class="link-bottom">
+                    Terms
+                </a>
+                <a href=# class="link-bottom">
+                    Settings
+                </a>
+            </div>
         </div>
     </body> 
 </html>
