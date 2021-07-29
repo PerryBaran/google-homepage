@@ -1,0 +1,199 @@
+<style>
+    * {
+        font-family: arial, sans-serif;
+        font-size: 13px;
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+    }
+    
+    .left {
+        position: absolute;
+        left: 15px;
+        top: 20px;
+    }
+
+    .right {
+        position: absolute;
+        right: 130px;
+        top: 20px;
+    }
+
+    .link {
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        padding-left: 13px;
+        opacity: 0.75;
+    }
+
+    .link:hover {
+        text-decoration: underline;
+    }
+
+    .link-bottom {
+        color: #000;
+        text-decoration: none;
+        display: inline-block;
+        padding-left: 19px;
+        opacity: 0.6;
+        font-size: 14px;
+    }
+    
+    .link-bottom:hover {
+        text-decoration: underline;
+    }
+    
+    .ninebutton {
+        border: none;
+        background: white;
+        position: absolute;
+        right: 95px;
+        top: 20px;
+        opacity: 0.6;
+    }
+
+    .ninebutton:hover {
+        opacity: 0.8;
+    }
+
+    .sign-in {
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        color:white;
+        outline: none;
+        background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+        padding: 7px 12px;
+        border-radius: 2px; 
+    }
+
+    .wrapper {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 320px;
+    }
+
+    .search-icon {
+        position: relative;
+        top: 4px;
+        width: 17px;
+        left: 30px;
+        opacity: 0.4;
+    }
+
+    .search {
+        border: 1px solid rgb(182, 181, 181);
+        border-radius: 100px;
+        height: 45px;
+        width: 475px;
+        padding: 2px 40px 1px 40px;
+        outline: 0;
+    }
+
+    .search:hover {
+        box-shadow: 0px 0 9px rgba(150, 148, 148, 0.329);
+    }
+
+    .mic {
+        position: relative;
+        top: 5px;
+        right: 35px;
+        width: 14px;
+    }
+
+    a.tip {
+        position: relative;
+        z-index: 20;
+    }
+
+    a.tip span { display: none; }
+
+    a.tip:hover span {
+        display: block;
+        position: absolute;
+        top: 33px;
+        left: -85px;
+        width: 100px;
+        background-color: rgb(39, 39, 39);
+        color: white;
+        padding: 5px
+    }
+
+    input[type=search]::-ms-clear { display: none; width : 0; height: 0; }
+    input[type=search]::-ms-reveal { display: none; width : 0; height: 0; }
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+    .search-buttons {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        top: 390px;
+    }
+    
+    .google-search {
+        text-align: center;
+        top: 350px;
+        border: 1px solid #f2f2f2;
+        font-size: 14px;
+        color:#5F6368;
+        outline: none;
+        background-color: #f2f2f2;
+        padding: 10px 16px;
+        margin-right: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .lucky {
+        text-align: center;
+        top: 350px;
+        border: 1px solid #f2f2f2;
+        font-size: 14px;
+        color:#5F6368;
+        outline: none;
+        background-color: #f2f2f2;
+        padding: 10px 16px;
+        margin-left: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .bottom-bar {
+        position: absolute;
+        background-color: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        bottom: 0px;
+        width: 101%;
+        margin-left: -10px;
+        padding-top: 20px;
+    }
+
+    .bottom-left {
+        position: relative;
+        top: -10px;
+        left: 20px;
+    }
+
+    .bottom-right {
+        position: absolute;
+        right: 30px;
+        top: 10px;
+    }
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+</style>
